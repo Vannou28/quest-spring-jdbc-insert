@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <title>Wild And Wizard</title>
 </head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <body>
 <h1>Wild And Wizard</h1>
-<section>
+<section class="m-5 ">
     <h3>Create a new wizard:</h3>
     <form action="/wizard/create" method="post">
         <label for="wizard-first-name">First name:</label>
-        <input id="wizard-first-name" name="firstName" placeholder="Harry" required type="text">
+        <input id="wizard-first-name" name="firstName" class="form-control" placeholder="Harry" required type="text">
         <br><br>
         <label for="wizard-last-name">Last name:</label>
-        <input id="wizard-last-name" name="lastName" placeholder="Potter" required type="text">
+        <input id="wizard-last-name" name="lastName" class="form-control" placeholder="Potter" required type="text">
         <br><br>
         <label for="wizard-birthday">Birthday:</label>
-        <input id="wizard-birthday" name="birthday" placeholder="1980-07-31" required type="date">
+        <input id="wizard-birthday" name="birthday" class="form-control" placeholder="1980-07-31" required type="date">
         <br><br>
         <label for="wizard-birth-place">Birth Place:</label>
-        <input id="wizard-birth-place" name="birthPlace" placeholder="London" required type="text">
+        <input id="wizard-birth-place" name="birthPlace" class="form-control" placeholder="London" required type="text">
         <br><br>
         <label for="wizard-biography">Biography:</label>
-        <textarea id="wizard-biography" name="biography"></textarea>
+        <textarea id="wizard-biography" class="form-control" name="biography"></textarea>
         <br><br>
         <label for="wizard-is-muggle">Is Muggle ?</label>
-        <input id="wizard-is-muggle" name="muggle" type="checkbox" value="true">
+        <input id="wizard-is-muggle" name="muggle" class="form-check-input" type="checkbox" value="true">
         <br><br>
-        <input type="submit" value="Send">
+        <input type="submit" class="btn btn-primary mb-3" value="Send">
     </form>
 </section>
+
 <section>
     <h3>Create a new school:</h3>
     <form action="/school/create" method="post">
